@@ -1,0 +1,229 @@
+*
+{
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: "bodega";
+    src: url(../fonts/BodegaSans_Black.ttf);
+}
+body
+{
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #444444;
+    color: #ffffff;
+    margin:30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+header nav a,h1,h2,h3
+{
+    font-family: "bodega";
+}
+main,a
+{
+    color: #ffffff;
+}
+.flex-control-nav, a.flex-next, a.flex-prev,video, .flexslider
+{
+    display: none;
+}
+main img,video
+{
+    width: 100%;
+}
+a:hover, .motos article h3,span
+{
+    color: #ff9d00;
+}
+footer, section article
+{
+    padding: 30px 25px 30px 25px;
+}
+/************************** TITRE *********************/
+h1
+{
+    font-size: 4rem;
+}
+h2
+{
+    font-size: 3rem;
+    padding:25px;
+    text-align: left;
+    border-top: 3px solid rgba(0, 0, 0, 0.075);
+    border-left: 3px solid rgba(0, 0, 0, 0.075); 
+}
+h3
+{
+    font-size: 2.5rem;
+}
+h1,h2,h3
+{
+    text-transform: uppercase;
+}
+/************************** HEADER *********************/
+header
+{
+    padding: 30px;
+    background: linear-gradient(167deg, rgba(255,255,255,1) 50%,rgb(33, 33, 33) 50%);
+}
+header nav
+{
+    font-size:2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+header nav a
+{
+    flex-basis: 33.3%;
+    text-decoration: none;  
+}
+/************************** MAIN *********************/
+.motos article
+{
+    color: #666666;
+    background-color: #ffffff;
+    margin:0px 10px 30px;
+
+}
+.motos article h3
+{
+    border-bottom: solid 3px #ff9d00;
+    margin: 0px;
+}
+.motos article a
+{
+    background-color: #ff9d00;
+    text-decoration: none;
+    padding: 15px 60px 15px 60px;
+}
+.detail h3
+{
+    margin: 0;
+    font-size: 2rem;
+}
+section div div
+{
+    display: flex;
+    flex-direction: column;
+}
+i
+{
+    font-size:5rem;
+    margin-top: 40px;
+}
+/************************** FOOTER *********************/
+footer
+{
+    color: #ced0cf;
+    box-shadow:0px 0px 25px #333333;
+    margin-top: 100px; 
+}
+footer img
+{
+    width: 60px;
+    margin-top: 15px;
+}
+footer nav
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer nav a
+{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px)
+{
+    body
+    {
+        background-image: url(../img/bg_body.svg);
+    }
+    header{
+        background: linear-gradient(130deg, rgba(255,255,255,1) 50%,rgb(33, 33, 33) 50%);
+    }
+    header div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+    header nav{
+        flex-basis: 50%;
+    }
+    video,.flexslider
+    {
+        display: block;
+    }
+    .motos div
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .motos article
+    {
+        flex-basis:45%;
+    }
+    .detail p
+    {
+        text-align:left;
+    }
+    footer nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer nav a
+    {
+        flex-basis: 15%; 
+    }
+}
+@media screen and (min-width:1025px)
+{
+    body
+    {
+        margin:0px;
+    }
+    main
+    {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1500px;
+        padding-right: 30px;
+        padding-left: 30px;
+        
+    }
+    .motos article
+    {
+        display: flex;
+        flex-direction: column;
+        flex-basis:22%; 
+    }
+    .motos article a
+    {
+        padding:10px 0px 10px 0;
+    }
+    .detail div{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .detail article
+    {
+        flex-basis: 50%;
+        text-align: left;
+    }
+    i
+    {
+        margin-left: 30px;
+    }
